@@ -21,14 +21,14 @@ function startQuiz () {
     header1El.innerHTML = " ";
     resultsEl.innerHTML = " ";
     startBtnEL = document.getElementById("startBtn");
-    startBtnEL.classList.add("d-none"); //hides the start button - works well
+    // hides "start" button 
+    startBtnEL.classList.add("d-none"); 
     getChoices();
     setTime(); 
 }
 
 function getChoices() {
-    // e.preventDefault();
-    //console.log(currentQuestion.choices); works
+    //console.log(currentQuestion.choices)
     var currentQuestion = myQuestions[currentQuestionIndex];
     var titleEL = document.getElementById("main");
     titleEL.textContent = currentQuestion.question;
@@ -58,10 +58,11 @@ function getChoices() {
             timeEl.textContent = time;
             feedbackEl.innerHTML = "<br>"
             feedbackEl.textContent = "Incorrect";
-        } else { //if correct
+            //if correct
+        } else { 
             feedbackEl.textContent = "Correct";
             score++;
-            // console.log(score); score works
+            // console.log(score)
         }
         currentQuestionIndex++;
         if (currentQuestionIndex===myQuestions.length || secondsLeft <= 0) {
@@ -84,11 +85,11 @@ function getChoices() {
         }, 1000);
        
     }
- 
-    function quizResults() { //function that shows the results and stores it in the local storage
+ //function that shows the results and stores it in the local storage
+    function quizResults() { 
         questionEL.innerHTML = " ";
         choicesEl.innerHTML = ' ';
-        header1El.innerHTML = "All Done!";
+        header1El.innerHTML = "ALL DONE!";
         choicesEl.innerHTML = "Enter your initials: ";
         finalScore.textContent = `Your score is: ${score}`;
         timeEl.classList.add("d-none");
@@ -112,7 +113,7 @@ function getChoices() {
         if (localStorage.length == 0) {
             resultsEl.innerHTML = " ";
             var resultsDiv = document.createElement("p");
-            resultsDiv.innerText =`No results stored. Please take a test!`;
+            resultsDiv.innerText =`No results stored. Please take the test!`;
             resultsEl.appendChild(resultsDiv);
         } else {
         //console.log("clicked")
@@ -122,9 +123,8 @@ function getChoices() {
             var testKey = localStorage.key(i);
             var resultsDiv = document.createElement("p");
             //console.log(localStorage.key(i));
-            //console.log(testResult);
-            
-            resultsDiv.innerText =`${testKey} score is ${testResult}`;
+            //console.log(testResult); 
+            resultsDiv.innerText =`${testKey} SCORE is ${testResult}`;
             resultsEl.appendChild(resultsDiv);
         }
     }}

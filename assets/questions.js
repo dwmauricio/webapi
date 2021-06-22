@@ -1,32 +1,38 @@
 var myQuestions = [
     {
-        question: "Commonly used data types DO NOT include:",
+        question: "When a User views a page containing a JavaScript program, which machine executes the script?",
         choices: 
-           ["strings", "booleans", "alerts", "numbers"],
-        correctAnswer: 3
+           ["The User's machine running a Web browser", "The Web server", "A central machine", "None of the above"],
+        correctAnswer: 1
     },
     {   
-        question: "The condition in an if / else statement is enclosed within ____.",
+        question: "____ JavaScript is also called server-side JavaScript.",
         choices: 
-            ["quotes", "curly brackets", "parentheses", "square brackets"],
-        correctAnswer: 3 
-        
+            ["Microsoft", "Navigator", "LiveWire", "Native"],
+        correctAnswer: 3    
     },
     {
-        question: "Array in Javascript can be used to store",
+        question: "What are variables used for in JavaScript Programs?",
         choices: 
-           ["numbers and strings", "other arrays", "booleans", "All of the above"],
-        correctAnswer: 4
+           ["Storing numbers, dates, or other values", "Varying randomly", "Causing high-school algebra flashbacks", "None of the above"],
+        correctAnswer: 1
     },
     {
-        question: "String values must inclosed within ____ when being assigned to a variable",
+        question: "Which of the following are capabilities of functions in JavaScript?",
         choices: 
-           ["commas", "curly brackets", "quotes", "parentheses"],
+           ["Return a value", "Accept parameters and Return a value", "Accept parameters", "None of the above"],
         correctAnswer: 3
-    },{
-        question: "A very useful too used during development and debugging for printing content to the debugger is",
+    },
+    {
+        question: "_____ tag is an extension to HTML that can enclose any number of JavaScript",
         choices: 
-           ["JavaScript", "TerminalBash", "for loops", "console.log"],
+           ["<script>", "<body>", "<head>", "<title>"],
+        correctAnswer: 1
+    },
+    {
+        question: "Which of the following types of image maps can be used with JavaScript?'",
+        choices: 
+           ["Server-side image maps", "Client-side image maps", "Server-side image maps and Client-side image maps", "None of the above"],
         correctAnswer: 2
     }
 ]

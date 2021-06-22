@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Code Quiz</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/quiz.css">
+    <link rel="stylesheet" href="assets/quiz-style.css">
 </head>
 <body>
     <div class="row">
@@ -17,21 +17,20 @@
     <div class="jumbotron col-lg-6 col-md-10 col-sm-12">
         
     <div class="col-lg col-md-10 col-sm-12"> 
-        <div class="row"><h1 class="col-md-10" id="header1">Coding Quiz Challenge</h1>
+        <div class="row">
+            <h1 class="col-md-10" id="header1"> Bootcamp Coding Quiz Challenge</h1>
         </div>
         <h7 id="main" class="row">
         <p>
-            Try to answer the following code-related questions 
-                within the time limit. Keep in mind that incorrect 
-                answers will penalize your score/time by ten 
-                seconds!
+            Try to answer the following JavaScript multiple-choice questions 
+                within the time limit. If you answer is incorrect 
+                it will penalize your score and time by ten seconds!
             </p>
         </h7>
         <div class="row">
             <button type="button" id="startBtn" class="btn btn-success">Start</button>
         </div>
         <div id="choices">
-
         </div>
         <div class="row">
             <!-- initials element -->
@@ -47,12 +46,12 @@
         </div>
         <h2 id="countdown"></h2>
         <div id="quizContainer"></div>
-    <div id="scoresFeedback"><button class="d-none btn btn-success" id="reStartBtn">Start Over!</button></div>
+    <div id="scoresFeedback">
+        <button class="d-none btn btn-success" id="reStartBtn">Start Over!</button></div>
     <div id="results"></div>
     </div>
     <div class="col-2">
-        
-        <div class="col-md-1" id="feedback"></div>
+         <div class="col-md-1" id="feedback"></div>
     </div>  
     </div>
 </div>

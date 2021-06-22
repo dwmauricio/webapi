@@ -1,10 +1,10 @@
 #startBtn {
     margin: 30px 0 0 15px;
-    width: 40%;
+    width: 30%;
 }
 
 #main {
-    margin-left: 0px;
+    margin-left: 20px;
 }
 
 #finalID {
@@ -13,7 +13,7 @@
 }
 
 #qzBtn {
-    background-color: darkmagenta;
+    background-color: #7D82B8;
     border-radius: 10px;
     display: block;
     margin: 10px;
@@ -22,7 +22,7 @@
 #highScores {
     margin-left: 2%;
     cursor: pointer;
-    color: green;
+    color:#003844;
 }
 
 #time {
